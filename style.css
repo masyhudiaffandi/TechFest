@@ -5,7 +5,8 @@
 }
 
 header {
-    background-image: url(/image/bg-image.png);
+    /* background-image: url(/image/bg-image.png); */
+    background-color: #0f2677;
     background-size: cover;
     height: 40vh;
     width: 100%;
@@ -23,7 +24,6 @@ header {
     position: fixed;
     left: 0;
     right: 0;
-    background: transparent;
     transition: background 0.3s ease-in-out;
     border: 1px solid rgba(15, 33, 103, 0);
 }
@@ -49,6 +49,11 @@ header {
 .nav ul li a{
     color: white;
     text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav a:hover{
+    color: #d8e0ff;
 }
 
 .hero {
@@ -69,7 +74,7 @@ header {
 }
 
 .hero-wrapper h1 {
-    font-size: 3.7vw;
+    font-size: 4vw;
 }
 
 .hero-wrapper p {
@@ -199,6 +204,7 @@ main {
 .card-content {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 25vw;
 }
 
