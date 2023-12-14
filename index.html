@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="forum.css">
     <title>HuSea News</title>
 </head>
 <body>
@@ -30,116 +31,280 @@
     </header>
 
     <main>
-        <div class="news-controller">
-            <div class="news-controller-wrapper">
-                <div class="news-control">
-                    <h4>News</h4>
-                </div>
-                <div class="news-forum">
-                    <h4>Forum</h4>
-                </div>
-            </div>
-        </div>
+        <div class="forum" id="forum">
+            <div class="news-controller">
+                <div class="radio-inputs forum-nav" id="forumNav">
+                    <div class="radio">
+                        <input type="radio" id="newsRadio" name="forumRadio" onclick="loadForum('newsForum')" checked>
+                        <label for="newsRadio" class="name">News</label>
+                    </div>
 
-        <div class="headline" style="display: flex; flex-direction: column;">
-            <div class="headline-title">
-                <h1 style="font-size: 2vw; padding-bottom: 6vh;">Berita Terpopuler</h1>
-            </div>
-            <div class="headline-wrapper">
-                <div class="headline-image">
-                    <img src="image/headline.png" alt="">
-                </div>
-                <div class="headline-text">
-                    <h1>Bertemu Jokowi, Nelayan Minta Kebijakan KKP Soal PIT dan Sistem Kuota Zona Dibatalkan</h1>
-                    <p>Dalam pertemuan tersebut, perwakilan SNI Muara Baru James Then menyatakan, penolakannya terhadap Penangkapan Ikan Terukur (PIT) dan sistem kuota zona yang tidak efektif. "Tolak PIT dan sistem kuota zona atau pangkalan karena tidak efektif dan efisien serta rawan konflik horizontal,".</p>
+                    <div class="radio">
+                        <input type="radio" id="chatRadio" name="forumRadio" onclick="loadForum('chatForum')">
+                        <label for="chatRadio" class="name">Forum</label>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="latest">
-            <div class="latest-title">
-                <h1>Berita Terbaru</h1>
-            </div>
-            <div class="latest-content">
-                <div class="latest-cards-row">
-                    <div class="latest-card-left">
-                        <div class="latest-card">
-                            <div class="card-image">
-                                <img src="image/headline.png" alt="">
-                            </div>
-                            <div class="card-content">
-                                <div class="content-title">
-                                    <h1>Nelayan Minta Kebijakan KKP Soal PIT dan Sistem Kuota Zona Dibatalkan.</h1>
-                                </div>
-                                <div class="content-text">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, animi quisquam. Cumque architecto, earum minima voluptas ratione soluta rerum eveniet, doloribus ad porro ut iure.</p>
-                                </div>
-                            </div>
+            <div class="husea" id="newsForum">
+                <div class="headline" style="display: flex; flex-direction: column;">
+                    <div class="headline-title">
+                        <h1 style="font-size: 2vw; padding-bottom: 6vh;">Berita Terpopuler</h1>
+                    </div>
+                    <div class="headline-wrapper">
+                        <div class="headline-image">
+                            <img src="image/headline.png" alt="">
                         </div>
-                        <div class="latest-card">
-                            <div class="card-image">
-                                <img src="image/content-1.jpg" alt="">
-                            </div>
-                            <div class="card-content">
-                                <div class="content-title">
-                                    <h1>Ketahui cara mengatasi limbah di laut.</h1>
-                                </div>
-                                <div class="content-text">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, animi quisquam. Cumque architecto, earum minima voluptas ratione soluta rerum eveniet, doloribus ad porro ut iure.</p>
-                                </div>
-                            </div>
+                        <div class="headline-text">
+                            <h1>Bertemu Jokowi, Nelayan Minta Kebijakan KKP Soal PIT dan Sistem Kuota Zona Dibatalkan</h1>
+                            <p>Dalam pertemuan tersebut, perwakilan SNI Muara Baru James Then menyatakan, penolakannya terhadap Penangkapan Ikan        Terukur (PIT) dan sistem kuota zona yang tidak efektif. "Tolak PIT dan sistem kuota zona atau pangkalan karena tidak    efektif dan efisien serta rawan konflik horizontal," Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur..</p>
                         </div>
-                        <div class="latest-card">
-                            <div class="card-image">
-                                <img src="image/content-2.jpg" alt="">
-                            </div>
-                            <div class="card-content">
-                                <div class="content-title">
-                                    <h1>Kampung nelayan adakan pemeriksaan ikan</h1>
+                    </div>
+                </div>
+
+                <div class="latest">
+                    <div class="latest-title">
+                        <h1>Berita Terbaru</h1>
+                    </div>
+                    <div class="latest-content">
+                        <div class="latest-cards-row">
+                            <div class="latest-card-left">
+                                <div class="latest-card">
+                                    <div class="card-image">
+                                        <img src="image/headline.png" alt="">
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="content-title">
+                                            <h1>Nelayan Minta Kebijakan KKP Soal PIT dan Sistem Kuota Zona Dibatalkan.</h1>
+                                        </div>
+                                        <div class="content-text">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, animi quisquam. Cumque       architecto, earum minima voluptas ratione soluta rerum eveniet, doloribus ad porro ut iure.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="content-text">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, animi quisquam. Cumque architecto, earum minima voluptas ratione soluta rerum eveniet, doloribus ad porro ut iure.</p>
+                                <div class="latest-card">
+                                    <div class="card-image">
+                                        <img src="image/content-1.jpg" alt="">
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="content-title">
+                                            <h1>Ketahui cara mengatasi limbah di laut.</h1>
+                                        </div>
+                                        <div class="content-text">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, animi quisquam. Cumque       architecto, earum minima voluptas ratione soluta rerum eveniet, doloribus ad porro ut iure.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="latest-card">
+                                    <div class="card-image">
+                                        <img src="image/content-2.jpg" alt="">
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="content-title">
+                                            <h1>Kampung nelayan adakan pemeriksaan ikan</h1>
+                                        </div>
+                                        <div class="content-text">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, animi quisquam. Cumque       architecto, earum minima voluptas ratione soluta rerum eveniet, doloribus ad porro ut iure.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="latest-card-right">
+                                <div class="latest-card">
+                                    <div class="card-image">
+                                        <img src="image/content-3.jpg" alt="">
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="content-title">
+                                            <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+                                        </div>
+                                        <div class="content-text">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, animi quisquam. Cumque       architecto, earum minima voluptas ratione soluta rerum eveniet, doloribus ad porro ut iure.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="latest-card">
+                                    <div class="card-image">
+                                        <img src="image/content-4.jpg" alt="">
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="content-title">
+                                            <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+                                        </div>
+                                        <div class="content-text">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, animi quisquam. Cumque       architecto, earum minima voluptas ratione soluta rerum eveniet, doloribus ad porro ut iure.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="latest-card">
+                                    <div class="card-image">
+                                        <img src="image/content-5.jpg" alt="">
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="content-title">
+                                            <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+                                        </div>
+                                        <div class="content-text">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, animi quisquam. Cumque       architecto, earum minima voluptas ratione soluta rerum eveniet, doloribus ad porro ut iure.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="latest-card-right">
-                        <div class="latest-card">
-                            <div class="card-image">
-                                <img src="image/content-3.jpg" alt="">
-                            </div>
-                            <div class="card-content">
-                                <div class="content-title">
-                                    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
-                                </div>
-                                <div class="content-text">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, animi quisquam. Cumque architecto, earum minima voluptas ratione soluta rerum eveniet, doloribus ad porro ut iure.</p>
-                                </div>
-                            </div>
+                </div>
+            </div>
+        
+            <div class="husea" id="chatForum">
+                <div class="forum">
+                    <div class="forum-wrapper">
+                        <div class="forum-title">
+                            <h1>HuSea Forum</h1>
                         </div>
-                        <div class="latest-card">
-                            <div class="card-image">
-                                <img src="image/content-4.jpg" alt="">
-                            </div>
-                            <div class="card-content">
-                                <div class="content-title">
-                                    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+                        <div class="forum-content">
+
+                            <div class="left-forum">
+                                <div class="forum-card">
+                                    <div class="forum-card-wrapper">
+                                        <div class="card-forum">
+                                            <div class="card-forum-title">
+                                                <h1>Cara terbaru untuk menangkap ikan</h1>
+                                            </div>
+                                            <div class="card-forum-nav">
+                                                <ul style="list-style: none;">
+                                                    <li>
+                                                        <p>Like : 12k</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Comment : 2k</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            save : 56k
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-forum">
+                                            <div class="card-forum-title">
+                                                <h1>Cara terbaru untuk menangkap ikan</h1>
+                                            </div>
+                                            <div class="card-forum-nav">
+                                                <ul style="list-style: none;">
+                                                    <li>
+                                                        <p>Like : 12k</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Comment : 2k</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            save : 56k
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-forum">
+                                            <div class="card-forum-title">
+                                                <h1>Cara terbaru untuk menangkap ikan</h1>
+                                            </div>
+                                            <div class="card-forum-nav">
+                                                <ul style="list-style: none;">
+                                                    <li>
+                                                        <p>Like : 12k</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Comment : 2k</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            save : 56k
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-forum">
+                                            <div class="card-forum-title">
+                                                <h1>Cara terbaru untuk menangkap ikan</h1>
+                                            </div>
+                                            <div class="card-forum-nav">
+                                                <ul style="list-style: none;">
+                                                    <li>
+                                                        <p>Like : 12k</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Comment : 2k</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            save : 56k
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-forum">
+                                            <div class="card-forum-title">
+                                                <h1>Cara terbaru untuk menangkap ikan</h1>
+                                            </div>
+                                            <div class="card-forum-nav">
+                                                <ul style="list-style: none;">
+                                                    <li>
+                                                        <p>Like : 12k</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Comment : 2k</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            save : 56k
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-forum">
+                                            <div class="card-forum-title">
+                                                <h1>Cara terbaru untuk menangkap ikan</h1>
+                                            </div>
+                                            <div class="card-forum-nav">
+                                                <ul style="list-style: none;">
+                                                    <li>
+                                                        <p>Like : 12k</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Comment : 2k</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            save : 56k
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="content-text">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, animi quisquam. Cumque architecto, earum minima voluptas ratione soluta rerum eveniet, doloribus ad porro ut iure.</p>
-                                </div>
                             </div>
-                        </div>
-                        <div class="latest-card">
-                            <div class="card-image">
-                                <img src="image/content-5.jpg" alt="">
-                            </div>
-                            <div class="card-content">
-                                <div class="content-title">
-                                    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
-                                </div>
-                                <div class="content-text">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, animi quisquam. Cumque architecto, earum minima voluptas ratione soluta rerum eveniet, doloribus ad porro ut iure.</p>
+                            <div class="right-forum">
+                                <div class="statistics">
+                                    <div class="statistics-wrapper">
+                                        <div class="statistics-card">
+                                            <div class="statistics-title">
+                                                <h1>Statistics</h1>
+                                            </div>
+                                            <div class="statistics-content">
+                                                <ul>
+                                                    <li><p>Online user : 12k</p></li>
+                                                    <li><p>Active user : 48k</p></li>
+                                                    <li><p>Comment : 2k</p></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -168,5 +333,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="jsajah.js"></script>
 </body>
 </html>

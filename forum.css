@@ -1,0 +1,63 @@
+.forum {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-forum {
+    width: 65vw;
+}
+
+.right-forum {
+    width: 1/4;
+}
+
+.forum-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vw;
+}
+
+.forum-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.forum-title h1{
+    margin-bottom: 4vh;
+}
+
+.card-forum {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: black 0vw 0vw 0.1vw;
+    gap: 2vw;
+    padding: 1vw;
+    border-radius: 0.3vw;
+}
+
+.card-forum-title h1 {
+    font-size: 1.3vw;
+}
+.card-forum-nav ul li p {
+    font-size: 1vw;
+}
+
+.card-forum-nav ul{
+    display: flex;
+    gap: 5vw;
+}
+
+.statistics-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    box-shadow: black 0vw 0vw 0.1vw;
+    padding: 2vw;
+    border-radius: 0.5vw;
+}
+
+.statistics-content ul li {
+    list-style: none;
+}

@@ -15,6 +15,7 @@ header {
 
 .nav {
     padding: 1.4vw 6vw;
+    z-index: 999;
 }
 
 .nav {
@@ -118,19 +119,13 @@ main {
     font-weight: 400;
 }
 
-.headline {
-    display: flex;
-    padding-inline: 4vw;
-}
-
 .headline-wrapper {
     display: flex;
-    align-items: center;
     gap: 2vw;
 }
 
 .headline-image {
-    width: 24vw;
+    width: 29vw;
     border-radius: 1vw;
 }
 
@@ -142,16 +137,13 @@ main {
 .headline-text {
     display: flex;
     flex-direction: column;
+    /* justify-content: space-between; */
     gap: 3vh;
     width: 52vw;
 }
 
 .headline-text h1{
     font-size: 1.7vw;
-}
-
-.latest {
-    padding-inline: 4vw;
 }
 
 .latest-title{
@@ -171,7 +163,7 @@ main {
 .latest-cards-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2vw;
+    gap: 6vw;
 }
 
 .latest-card {
@@ -245,3 +237,48 @@ footer {
 .footer-nav li {
     list-style: none;
 }
+
+/* tampil nggak nya */
+.husea {
+    display: none;
+}
+.husea.active {
+    display: contents;
+}
+
+.radio-inputs {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    background-color: #EEE;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+    width: 300px;
+    font-size: 14px;
+}
+.radio-inputs .radio {
+    flex: 1 1 auto;
+    text-align: center;
+}
+.radio-inputs .radio input {
+    display: none;
+}
+.radio-inputs .radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 0;
+    color: rgba(51, 65, 85, 1);
+    transition: all .15s ease-in-out;
+}
+.radio-inputs .radio input:checked + .name {
+    background-color: #fff;
+    font-weight: 600;
+}
+
+
